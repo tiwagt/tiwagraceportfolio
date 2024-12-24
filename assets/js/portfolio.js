@@ -14,6 +14,11 @@ $(document).ready(function(){
         }
     })
 
+    $('.app-link').on('click', function(event) {
+        // Prevent any JS hijacking behavior
+        event.stopPropagation();
+    });
+
     //MAGNIFIC-POPUP
     $(".gallery").magnificPopup({
         
